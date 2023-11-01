@@ -1,0 +1,82 @@
+* {
+  font-family: 'IBM Plex Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #eee;
+}
+section {
+  height: 100vh;
+  padding: 20px;
+}
+section > h2 {
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  main {
+    display: flex;
+  }
+  main > form {
+    width: 16%;
+  }
+  main > .note-list {
+    width: 74%;
+    padding-left: 30px;
+  }
+}
+main form * {
+  width: 100%;
+}
+
+form * {
+  outline: none;
+}
+
+form input, form textarea {
+  margin: 2px 0;
+  padding: 6px;
+}
+
+form button {
+  padding: 6px 0;
+}
+
+.card-note {
+  background: #fff;
+  border: 2px solid rgba(0,0,0,.4);
+  padding: 10px;
+  border-radius: 6px;
+  width: 230px;
+  height: 300px;
+}
+
+@media only screen and (max-width: 768px){
+  .card-note {
+    margin: auto;
+  }
+}
+
+.card-note .note-body {
+  font-size: 14px;
+  margin-top: 16px;
+  height: 65%;
+  overflow-y: auto;
+}
+
+.action {
+  margin-top: 10px;
+}
+
+.note-list {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.note-list h5 {
+  color: red;
+}
